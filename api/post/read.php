@@ -21,7 +21,6 @@ $num = $result->rowCount();
 // Check if any posts
 if ($num > 0) {
   // Post Array
-  $posts_arr = array();
   $posts_arr['data'] = array();
 
   while($row = $result->fetch(PDO::FETCH_ASSOC)){
