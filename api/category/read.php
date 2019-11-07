@@ -20,12 +20,12 @@ $num = $result->rowCount();
 
 // Check if categories exist
 if ($num > 0) {
-    /** Fetch all categories from the database collection and output the result*/
+    /** Fetch all categories from the database collection and output the result */
     $categories_arr['data'] = array();
 
-    // Loop over the result set
+    // Loop through the result set
     while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
-        // Extract rows
+        // Extract row
         extract($row);
 
         $category_items = array(
