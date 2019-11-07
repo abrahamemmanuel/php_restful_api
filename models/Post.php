@@ -93,7 +93,7 @@ class Post
     // Create Post
     public function create()
     {
-        // CReate query
+        // Create query
         $query = 'INSERT INTO ' . $this->table . '
         SET
           title = :title,
